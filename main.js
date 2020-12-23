@@ -11,7 +11,7 @@ const gotoProps = {
 const puppeteer = require("puppeteer");
 
 const secondTabSelector =
-  "#MasterGC_ContentBlockHolder_RadTabStrip1 > div > ul > li:nth-child(2) > a";
+  "#MasterGC_ContentBlockHolder_RadTabStrip1 > div > ul > li:nth-child(2) > a"; // this could be nth-child(3) too
 
 const nameQuery = (row, col) =>
   `#MasterGC_ContentBlockHolder_wucTiposAnexoConcurso_ctl05_gvCriterios > tbody > tr:nth-child(${row}) > td:nth-child(${col})`;

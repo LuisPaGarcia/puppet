@@ -1,3 +1,5 @@
+const timeout = 1500
+const rowsArray = [2, 3, 4, 5];
 const nog = [6673015, 6100325];
 const urls = nog.map(
   (nogi) =>
@@ -30,8 +32,7 @@ const valueQuery = (row, col) =>
     const obj = {};
     if (tabText.includes("Bases del Proceso")) {
       await page.click(secondTabSelector);
-      await page.waitForTimeout(1500);
-      const rowsArray = [2, 3, 4, 5];
+      await page.waitForTimeout(timeout);
       for (const row of rowsArray) {
         const nameElement = await page.$(nameQuery(row, 1));
         const valueElement = await page.$(valueQuery(row, 2));

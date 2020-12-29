@@ -1,17 +1,19 @@
 {
-  "name": "puppet",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "puppeteer": "^5.5.0",
-    "puppeteer-core": "^5.5.0"
-  }
+	"name": "puppet",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node main.js",
+		"reset": "node ./utils/reset.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"json2csv": "^5.0.5",
+		"puppeteer": "^5.5.0",
+		"puppeteer-core": "^5.5.0"
+	}
 }

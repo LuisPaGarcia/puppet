@@ -34,6 +34,8 @@ $ npm install
 $ npm run start
 ```
 
+![run example ](https://github.com/LuisPaGarcia/puppet/raw/main/%20screen.png)
+
 ### Available scripts
 
 ## `npm run start`: 

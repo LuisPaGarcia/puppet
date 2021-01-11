@@ -22,6 +22,7 @@ function reset() {
 		const log = fs.openSync(file.path, 'w');
 		fs.writeSync(log, file.value);
 		console.log(`- Erased: ${file.path}`);
+		fs.closeSync(log);
 	}
 }
 

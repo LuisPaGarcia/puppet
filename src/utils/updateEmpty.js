@@ -11,6 +11,7 @@ async function updateData(value) {
 	const fileNameJSON = './input/empty.json';
 	const log = fs.openSync(fileNameJSON, 'w');
 	fs.writeSync(log, JSON.stringify(completedJson));
+	fs.closeSync(log);
 }
 
 module.exports = updateData;

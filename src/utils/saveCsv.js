@@ -7,6 +7,7 @@ async function saveCsv() {
 		const csvContent = await json2csv();
 		const log = fs.openSync('./output/data.csv', 'w');
 		fs.writeSync(log, csvContent);
+		fs.closeSync(log);
 	} catch (error) {
 		console.log(error);
 	}

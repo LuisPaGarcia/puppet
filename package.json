@@ -1,19 +1,20 @@
 {
-	"name": "puppet",
-	"version": "1.0.0",
-	"description": "",
-	"main": "main.js",
-	"scripts": {
-		"start": "node main.js",
-		"reset": "node ./src/utils/reset.js",
-		"break": "node ./break.js"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"json2csv": "^5.0.5",
-		"puppeteer": "^5.5.0",
-		"puppeteer-core": "^5.5.0"
-	}
+  "name": "puppet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "reset": "node ./src/utils/reset.js",
+    "split": "npm run split-reset && node ./src/utils/splitInput.js",
+    "split-reset": "node ./src/utils/splitInputReset.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json2csv": "^5.0.5",
+    "puppeteer": "^5.5.0",
+    "puppeteer-core": "^5.5.0"
+  }
 }

@@ -1,4 +1,21 @@
 const fs = require('fs');
+const path = require('path');
+
+const directory = './input-parts/';
+
+function clearInputParts() {
+	fs.readdir(directory, (err, files) => {
+		if (err) throw err;
+
+		for (const file of files) {
+			fs.unlink(path.join(directory, file), err => {
+				if (err) throw err;
+			});
+		}
+		console.log('- Erased: ./input-parts/');
+	});
+}
+
 function reset() {
 	const files = [
 		{
@@ -24,6 +41,7 @@ function reset() {
 		console.log(`- Erased: ${file.path}`);
 		fs.closeSync(log);
 	}
+	clearInputParts();
 }
 
 reset();
